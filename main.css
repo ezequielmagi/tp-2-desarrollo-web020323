@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article{
+    padding: 1rem;
+}
+
+figure{
+    background-image: url(./assets/img/image-product-mobile.jpg);
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+article article p:nth-child(4){
+    color: green;
+    font-family: 'Fraunces', sans-serif;
+}
