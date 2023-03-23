@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
+:root{
+    --DARK-CYAN: hsl(158, 36%, 37%);
+    --CREAM: hsl(30, 38%, 92%);
+    --VERY-DARK-BLUE: hsl(212, 21%, 14%);
+    --DARK-GRAYISH-BLUE: hsl(228, 12%, 48%);
+    --WHITE: hsl(0, 0%, 100%);  
+}
+
+body{
+    background: var(--CREAM);
+}
+
 article{
-    padding: 1rem;
+    background: var(--WHITE);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 auto;
+    width: 343px;
 }
 
 figure{
@@ -22,14 +40,90 @@ h1{
     font-family: 'Fraunces', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 p{
     font-family: 'Montserrat', sans-serif;
 }
+article article{
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
 
 
-article article p:nth-child(4){
-    color: green;
+article article p:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 15px;
+    margin: 1rem 0;
+}
+
+article article p:nth-child(3){
+    color: var(--DARK-GRAYISH-BLUE);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-right: 1rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+}
+
+.prices p:nth-child(1){
+    color: var(--DARK-CYAN);
     font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.3rem;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+
+.prices p:nth-child(2){
+    color: var(--DARK-GRAYISH-BLUE);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+    text-decoration: line-through;
+} 
+
+button{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background: var(--DARK-CYAN);
+}
+
+button p{
+    color: var(--WHITE);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button p::before{
+    content: url(./assets/img/icon-cart.svg);
+    margin-right: 1rem;
 }
