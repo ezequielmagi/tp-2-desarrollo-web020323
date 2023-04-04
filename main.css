@@ -14,6 +14,9 @@
 
 body{
     background: var(--CREAM);
+    height: 100vh;
+    display: grid;
+    align-content: center;
 }
 
 article{
@@ -126,4 +129,36 @@ button p{
 button p::before{
     content: url(./assets/img/icon-cart.svg);
     margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    article{
+        width: 450px;
+    }
+}
+
+@media (min-width: 1024px){
+    article{
+        display: flex;
+        width: 600px;
+        height: 450px;
+    }
+    figure{
+        background-image: url(./assets/img/image-product-desktop.jpg);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        width: 50%;
+    }
+
+    article article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+    }
 }
